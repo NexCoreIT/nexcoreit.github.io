@@ -81,14 +81,14 @@
       "@type": "OfferCatalog",
       "name": "Software Development Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inventory Management System", "description": "Real-time stock tracking, multi-warehouse support, barcode integration, and automated reorder alerts." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM System", "description": "Complete customer lifecycle management, sales pipeline tracking, and lead conversion tools." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Point of Sale (POS) System", "description": "Fast checkout, payment gateway integration, sales reporting, and employee management." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-Commerce Platform", "description": "Full-featured online store with product catalog, payments, order tracking, and customer accounts." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "School Management System", "description": "Student enrollment, attendance, grade management, fee billing, and timetable scheduling." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Restaurant Management System", "description": "Table management, kitchen order management, menu control, and multi-location support." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "API Development & Integration", "description": "Custom REST and GraphQL APIs, third-party integrations, payment gateways, and microservices." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Software Development", "description": "Fully tailored software solutions designed for your specific industry and operational needs." } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inventory Management System" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM System" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Point of Sale (POS) System" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-Commerce Platform" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "School Management System" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Restaurant Management System" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "API Development & Integration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Software Development" } }
       ]
     },
     "founder": [
@@ -134,7 +134,7 @@
         "name": "How much does custom software development cost at NexCore IT?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "NexCore IT offers three pricing models: Standard Packages for small to medium businesses, Custom Development for fully tailored solutions, and Enterprise Solutions for large organizations. Pricing depends on project scope. Contact us via WhatsApp for a free consultation and quote."
+          "text": "NexCore IT offers three pricing models: Standard Packages for small to medium businesses, Custom Development for fully tailored solutions, and Enterprise Solutions for large organizations. Contact us via WhatsApp for a free consultation and quote."
         }
       },
       {
@@ -142,7 +142,7 @@
         "name": "What technologies does NexCore IT use?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "NexCore IT builds with modern frameworks and best practices including Laravel, PHP, REST APIs, Vue.js, MySQL, Docker, and cloud-ready architectures designed for scalability and security."
+          "text": "NexCore IT builds with modern frameworks including Laravel, PHP, REST APIs, Vue.js, MySQL, Docker, and cloud-ready architectures."
         }
       },
       {
@@ -157,7 +157,7 @@
   }
   </script>
 
-  <!-- Schema: WebSite with SearchAction -->
+  <!-- Schema: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -190,7 +190,6 @@
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -204,7 +203,6 @@
       text-rendering: optimizeLegibility;
     }
 
-    /* GRID BACKGROUND */
     body::before {
       content: '';
       position: fixed;
@@ -270,7 +268,6 @@
 
     .nav-cta:hover { opacity: 0.85; color: var(--navy) !important; }
 
-    /* SECTIONS */
     section { position: relative; z-index: 1; }
 
     .container {
@@ -319,8 +316,6 @@
       font-size: clamp(1.9rem, 4vw, 3rem);
       font-weight: 700;
       line-height: 1.15;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       letter-spacing: -0.03em;
       margin-bottom: 1.5rem;
       max-width: 800px;
@@ -543,7 +538,6 @@
 
     /* SERVICES */
     .services { padding: 6rem 2rem; background: rgba(10,22,40,0.5); }
-
     .services-header { text-align: center; margin-bottom: 3.5rem; }
     .services-header .section-sub { margin: 0 auto; }
 
@@ -566,9 +560,7 @@
     .service-card::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0; left: 0; right: 0;
       height: 2px;
       background: linear-gradient(90deg, var(--cyan), transparent);
       opacity: 0;
@@ -646,7 +638,6 @@
     }
 
     .why-card:hover { border-color: rgba(0,212,255,0.3); }
-
     .why-icon { font-size: 1.8rem; margin-bottom: 1rem; }
 
     .why-card h3 {
@@ -661,7 +652,6 @@
 
     /* PROCESS */
     .process { padding: 6rem 2rem; background: rgba(10,22,40,0.5); }
-
     .process-header { text-align: center; margin-bottom: 4rem; }
 
     .process-steps {
@@ -682,11 +672,7 @@
       opacity: 0.3;
     }
 
-    .process-step {
-      text-align: center;
-      padding: 1.5rem;
-      position: relative;
-    }
+    .process-step { text-align: center; padding: 1.5rem; position: relative; }
 
     .step-num {
       width: 56px;
@@ -716,7 +702,6 @@
 
     /* PRICING */
     .pricing { padding: 6rem 2rem; }
-
     .pricing-header { text-align: center; margin-bottom: 3.5rem; }
 
     .pricing-grid {
@@ -836,6 +821,7 @@
       text-decoration: none;
       transition: border-color 0.2s, transform 0.2s;
       display: block;
+      text-align: center;
     }
 
     .contact-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
@@ -851,7 +837,37 @@
     .contact-card .role {
       font-size: 0.8rem;
       color: var(--muted);
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    /* ── NEW: social links row ── */
+    .contact-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      margin-bottom: 0;
+      flex-wrap: nowrap;
+    }
+
+    .contact-social a {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: color 0.2s;
+      padding: 0.15rem 0;
+      white-space: nowrap;
+    }
+
+    .contact-social a:hover { color: var(--cyan); }
+
+    .contact-social .divider {
+      color: var(--muted);
+      font-size: 0.7rem;
+      opacity: 0.4;
     }
 
     .contact-card .wa-btn {
@@ -900,6 +916,7 @@
       border: none;
     }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
+
     .mobile-menu {
       display: none;
       position: fixed;
@@ -971,12 +988,8 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
-    });
-    function closeMenu() {
-      mobileMenu.classList.remove('open');
-    }
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    function closeMenu() { mobileMenu.classList.remove('open'); }
   </script>
 
   <!-- HERO -->
@@ -988,9 +1001,7 @@
       <a href="https://wa.me/8801791296967?text=Hi%20NexCore%20IT%2C%20I%27d%20like%20a%20free%20consultation" target="_blank" rel="noopener" class="btn-primary">
         💬 Free Consultation
       </a>
-      <a href="#services" class="btn-outline">
-        View Our Solutions →
-      </a>
+      <a href="#services" class="btn-outline">View Our Solutions →</a>
     </div>
   </section>
 
@@ -1024,7 +1035,6 @@
           <div class="section-label">Who We Are</div>
           <h2 class="section-title">A software boutique built for your business</h2>
           <p class="section-sub">NexCore IT is a small, focused software development team. We build custom systems for businesses across industries — local and international — with a commitment to quality, scalability, and ongoing support.</p>
-
           <ul class="approach-list">
             <li class="approach-item">
               <div class="approach-icon">🎯</div>
@@ -1056,7 +1066,6 @@
             </li>
           </ul>
         </div>
-
         <div class="about-visual">
           <h3>Our Mission</h3>
           <p class="mission-text">"To deliver cutting-edge technology that adapts to your unique business needs, not the other way around."</p>
@@ -1084,9 +1093,7 @@
         <h2 class="section-title">Our Solutions & Services</h2>
         <p class="section-sub">From off-the-shelf-style packages to fully custom systems — every solution is built with your workflow in mind.</p>
       </div>
-
       <div class="services-grid">
-
         <div class="service-card">
           <div class="service-icon">📦</div>
           <h3>Inventory Management System</h3>
@@ -1099,7 +1106,6 @@
             <li>Comprehensive analytics</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">👥</div>
           <h3>CRM System</h3>
@@ -1112,7 +1118,6 @@
             <li>Performance analytics</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">🛒</div>
           <h3>Point of Sale (POS) System</h3>
@@ -1125,7 +1130,6 @@
             <li>Receipt customization</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">🌐</div>
           <h3>E-Commerce Platform</h3>
@@ -1138,7 +1142,6 @@
             <li>Customer accounts</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">🏫</div>
           <h3>School Management System</h3>
@@ -1151,7 +1154,6 @@
             <li>Timetable & scheduling</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">🍽️</div>
           <h3>Restaurant Management System</h3>
@@ -1164,7 +1166,6 @@
             <li>Multi-location support</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">🔌</div>
           <h3>API Development & Integration</h3>
@@ -1177,7 +1178,6 @@
             <li>API documentation & support</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">⚙️</div>
           <h3>Custom Solutions</h3>
@@ -1190,7 +1190,6 @@
             <li>End-to-end delivery</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -1201,36 +1200,12 @@
       <div class="section-label">Why NexCore IT</div>
       <h2 class="section-title">What sets us apart</h2>
       <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">🎯</div>
-          <h3>Customization</h3>
-          <p>Every solution is built specifically for your business processes and workflow — no generic templates.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">📈</div>
-          <h3>Scalability</h3>
-          <p>Our systems grow with your business, from startup to enterprise, without painful rewrites.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🔗</div>
-          <h3>Integration</h3>
-          <p>Seamlessly integrate with your existing tools, platforms, and third-party services.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">☁️</div>
-          <h3>Cloud-Ready</h3>
-          <p>Access your systems anywhere, anytime, on any device — built for the modern cloud.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🔒</div>
-          <h3>Security</h3>
-          <p>Enterprise-grade security to protect your valuable business data at every layer.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🛠️</div>
-          <h3>Support</h3>
-          <p>Dedicated technical support and training for your team — from concept to deployment and beyond.</p>
-        </div>
+        <div class="why-card"><div class="why-icon">🎯</div><h3>Customization</h3><p>Every solution is built specifically for your business processes and workflow — no generic templates.</p></div>
+        <div class="why-card"><div class="why-icon">📈</div><h3>Scalability</h3><p>Our systems grow with your business, from startup to enterprise, without painful rewrites.</p></div>
+        <div class="why-card"><div class="why-icon">🔗</div><h3>Integration</h3><p>Seamlessly integrate with your existing tools, platforms, and third-party services.</p></div>
+        <div class="why-card"><div class="why-icon">☁️</div><h3>Cloud-Ready</h3><p>Access your systems anywhere, anytime, on any device — built for the modern cloud.</p></div>
+        <div class="why-card"><div class="why-icon">🔒</div><h3>Security</h3><p>Enterprise-grade security to protect your valuable business data at every layer.</p></div>
+        <div class="why-card"><div class="why-icon">🛠️</div><h3>Support</h3><p>Dedicated technical support and training for your team — from concept to deployment and beyond.</p></div>
       </div>
     </div>
   </section>
@@ -1244,36 +1219,12 @@
         <p class="section-sub" style="margin: 0 auto;">Six clear steps from your first conversation to a live, supported system.</p>
       </div>
       <div class="process-steps">
-        <div class="process-step">
-          <div class="step-num">1</div>
-          <h3>Consultation</h3>
-          <p>We listen to understand your business needs, challenges, and goals.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">2</div>
-          <h3>Planning</h3>
-          <p>Detailed project roadmap and technical specifications agreed upfront.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">3</div>
-          <h3>Development</h3>
-          <p>Agile development with regular updates, demos, and your feedback incorporated.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">4</div>
-          <h3>Testing</h3>
-          <p>Rigorous QA, performance testing, and user acceptance testing.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">5</div>
-          <h3>Deployment</h3>
-          <p>Smooth implementation with minimal disruption to your operations.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">6</div>
-          <h3>Support</h3>
-          <p>Ongoing maintenance, updates, and technical assistance after launch.</p>
-        </div>
+        <div class="process-step"><div class="step-num">1</div><h3>Consultation</h3><p>We listen to understand your business needs, challenges, and goals.</p></div>
+        <div class="process-step"><div class="step-num">2</div><h3>Planning</h3><p>Detailed project roadmap and technical specifications agreed upfront.</p></div>
+        <div class="process-step"><div class="step-num">3</div><h3>Development</h3><p>Agile development with regular updates, demos, and your feedback incorporated.</p></div>
+        <div class="process-step"><div class="step-num">4</div><h3>Testing</h3><p>Rigorous QA, performance testing, and user acceptance testing.</p></div>
+        <div class="process-step"><div class="step-num">5</div><h3>Deployment</h3><p>Smooth implementation with minimal disruption to your operations.</p></div>
+        <div class="process-step"><div class="step-num">6</div><h3>Support</h3><p>Ongoing maintenance, updates, and technical assistance after launch.</p></div>
       </div>
     </div>
   </section>
@@ -1287,7 +1238,6 @@
         <p class="section-sub" style="margin: 0 auto;">One-time license, monthly subscription, or annual plans — we work with your budget.</p>
       </div>
       <div class="pricing-grid">
-
         <div class="pricing-card">
           <h3>Standard Package</h3>
           <p>Pre-configured solutions with essential features for small to medium businesses.</p>
@@ -1299,7 +1249,6 @@
           </ul>
           <a href="https://wa.me/8801791296967?text=Hi%2C%20I%27m%20interested%20in%20a%20Standard%20Package" target="_blank" rel="noopener" class="pricing-cta">Get Started →</a>
         </div>
-
         <div class="pricing-card featured">
           <h3>Custom Development</h3>
           <p>Fully tailored solutions designed from the ground up for your specific needs.</p>
@@ -1311,7 +1260,6 @@
           </ul>
           <a href="https://wa.me/8801791296967?text=Hi%2C%20I%27m%20interested%20in%20Custom%20Development" target="_blank" rel="noopener" class="pricing-cta">Get Started →</a>
         </div>
-
         <div class="pricing-card">
           <h3>Enterprise Solution</h3>
           <p>Comprehensive systems for large organizations with complex requirements.</p>
@@ -1323,7 +1271,6 @@
           </ul>
           <a href="https://wa.me/8801791296967?text=Hi%2C%20I%27m%20interested%20in%20an%20Enterprise%20Solution" target="_blank" rel="noopener" class="pricing-cta">Get Started →</a>
         </div>
-
       </div>
     </div>
   </section>
@@ -1336,16 +1283,41 @@
       <p class="section-sub" style="margin: 0.8rem auto 0;">Schedule a free consultation. We'll discuss your needs and propose the right solution — no commitment required.</p>
 
       <div class="contact-grid">
-        <a href="https://wa.me/8801791296967?text=Hi%20NexCore%20IT%2C%20I%27d%20like%20a%20free%20consultation" target="_blank" rel="noopener" class="contact-card">
+
+        <!-- K. Polash -->
+        <div class="contact-card">
           <div class="name">K. Polash</div>
           <div class="role">Co-Founder</div>
-          <span class="wa-btn">💬 WhatsApp →</span>
-        </a>
-        <a href="https://wa.me/8801776718178?text=Hi%20NexCore%20IT%2C%20I%27d%20like%20a%20free%20consultation" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-social">
+            <a href="https://pola5h.github.io/" target="_blank" rel="noopener">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
+              Portfolio
+            </a>
+            <span class="divider">·</span>
+            <a href="https://linkedin.com/in/pola5h" target="_blank" rel="noopener">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <span class="divider">·</span>
+            <a href="https://wa.me/8801791296967?text=Hi%20NexCore%20IT%2C%20I%27d%20like%20a%20free%20consultation" target="_blank" rel="noopener" style="color:#25d366; border-color:rgba(37,211,102,0.2);">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Fazle Rabbi Zidan -->
+        <div class="contact-card">
           <div class="name">Fazle Rabbi Zidan</div>
           <div class="role">Co-Founder</div>
-          <span class="wa-btn">💬 WhatsApp →</span>
-        </a>
+          <div class="contact-social" style="justify-content:center;">
+            <a href="https://wa.me/8801776718178?text=Hi%20NexCore%20IT%2C%20I%27d%20like%20a%20free%20consultation" target="_blank" rel="noopener" style="color:#25d366; border-color:rgba(37,211,102,0.2);">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
